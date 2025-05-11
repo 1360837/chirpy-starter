@@ -1,0 +1,68 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://1360837.github.io/</id>
+  <title>#define Jiwoo</title>
+  <subtitle>A technical blog covering game engine development, graphics programming, computer science, and math.</subtitle>
+  <updated>2025-05-11T17:54:00+09:00</updated>
+  <author>
+    <name>Jiwoo Nam</name>
+    <uri>https://1360837.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://1360837.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="ko"
+    href="https://1360837.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Jiwoo Nam </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>GitHub Pages 개설하기</title>
+    <link href="https://1360837.github.io/posts/github-pages/" rel="alternate" type="text/html" title="GitHub Pages 개설하기" />
+    <published>2025-05-07T11:45:00+09:00</published>
+  
+    <updated>2025-05-07T11:45:00+09:00</updated>
+  
+    <id>https://1360837.github.io/posts/github-pages/</id>
+    <content type="text/html" src="https://1360837.github.io/posts/github-pages/" />
+    <author>
+      <name>nji</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  <summary>언젠간 해야지 해야지 하던 숙제를 드디어 하는 기분입니다
+
+  velog, tistory, 네이버 블로그, GitHub Pages 등 여러 플랫폼을 고민하다가 내 친구 chatGPT의 추천으로 GitHub Pages로 선택하게 되었습니다.
+
+
+Jekyll 과 GitHub Pages
+
+우선 블로그를 만들때 제가 사용할 도구는 Jekyll입니다.
+
+
+  Jekyll은 루비 기반 정적 사이트 생성기입니다.
+
+
+제가 개설하면서 참고한 여러 블로그에서는 일단 루비와 Jekyll을 다운받고 시작했는데, 저는 그럴 필요가 없다고 생각해서 순서를 좀 바꿔보겠습니다.
+
+Jekyll 테마 선택
+
+제일 먼저 해야할건 Jekyll 테마를 선택하는 겁니다.
+
+다양한 사이트에서 테마를 선택할 수 있는데, 여러 사이트를 비교해 ...</summary>
+
+  </entry>
+
+</feed>
+
+
