@@ -4,7 +4,7 @@
   <id>https://1360837.github.io/</id>
   <title>#define Jiwoo</title>
   <subtitle>A technical blog covering game engine development, graphics programming, computer science, and math.</subtitle>
-  <updated>2025-05-11T17:54:00+09:00</updated>
+  <updated>2025-05-18T16:22:30+09:00</updated>
   <author>
     <name>Jiwoo Nam</name>
     <uri>https://1360837.github.io/</uri>
@@ -24,7 +24,7 @@
     <link href="https://1360837.github.io/posts/github-pages/" rel="alternate" type="text/html" title="GitHub Pages 개설하기" />
     <published>2025-05-07T11:45:00+09:00</published>
   
-    <updated>2025-05-07T11:45:00+09:00</updated>
+    <updated>2025-05-11T20:17:55+09:00</updated>
   
     <id>https://1360837.github.io/posts/github-pages/</id>
     <content type="text/html" src="https://1360837.github.io/posts/github-pages/" />
@@ -40,26 +40,59 @@
     
   
 
-  <summary>언젠간 해야지 해야지 하던 숙제를 드디어 하는 기분입니다
+  <summary>chripy 테마로 GitHub Pages 개설하기</summary>
 
-  velog, tistory, 네이버 블로그, GitHub Pages 등 여러 플랫폼을 고민하다가 내 친구 chatGPT의 추천으로 GitHub Pages로 선택하게 되었습니다.
+  </entry>
 
+  
+  <entry>
+    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인</title>
+    <link href="https://1360837.github.io/posts/ch01-1/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인" />
+    <published>2025-04-26T21:00:00+09:00</published>
+  
+    <updated>2025-04-26T21:00:00+09:00</updated>
+  
+    <id>https://1360837.github.io/posts/ch01-1/</id>
+    <content type="text/html" src="https://1360837.github.io/posts/ch01-1/" />
+    <author>
+      <name>nji</name>
+    </author>
 
-Jekyll 과 GitHub Pages
+  
+    
+    <category term="Graphics" />
+    
+    <category term="Study Notes" />
+    
+  
 
-우선 블로그를 만들때 제가 사용할 도구는 Jekyll입니다.
+  <summary>그래픽스 관점의 파이프라인</summary>
 
+  </entry>
 
-  Jekyll은 루비 기반 정적 사이트 생성기입니다.
+  
+  <entry>
+    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01 폴리곤 메쉬</title>
+    <link href="https://1360837.github.io/posts/ch01/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01 폴리곤 메쉬" />
+    <published>2025-04-25T21:00:00+09:00</published>
+  
+    <updated>2025-04-25T21:00:00+09:00</updated>
+  
+    <id>https://1360837.github.io/posts/ch01/</id>
+    <content type="text/html" src="https://1360837.github.io/posts/ch01/" />
+    <author>
+      <name>nji</name>
+    </author>
 
+  
+    
+    <category term="Graphics" />
+    
+    <category term="Study Notes" />
+    
+  
 
-제가 개설하면서 참고한 여러 블로그에서는 일단 루비와 Jekyll을 다운받고 시작했는데, 저는 그럴 필요가 없다고 생각해서 순서를 좀 바꿔보겠습니다.
-
-Jekyll 테마 선택
-
-제일 먼저 해야할건 Jekyll 테마를 선택하는 겁니다.
-
-다양한 사이트에서 테마를 선택할 수 있는데, 여러 사이트를 비교해 ...</summary>
+  <summary>게임 개발 과정과 Ch01 목차</summary>
 
   </entry>
 
