@@ -1,5 +1,6 @@
 ---
 title: GitHub Pages 개설하기
+description: chripy 테마로 GitHub Pages 개설하기
 author: nji
 date: 2025-05-07 11:45:00 +0900
 categories: [Blogging, Tutorial]
