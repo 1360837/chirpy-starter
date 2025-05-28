@@ -4,7 +4,7 @@
   <id>https://1360837.github.io/</id>
   <title>#define Jiwoo</title>
   <subtitle>A technical blog covering game engine development, graphics programming, computer science, and math.</subtitle>
-  <updated>2025-05-24T16:10:32+09:00</updated>
+  <updated>2025-05-28T22:29:42+09:00</updated>
   <author>
     <name>Jiwoo Nam</name>
     <uri>https://1360837.github.io/</uri>
@@ -20,8 +20,52 @@
 
   
   <entry>
-    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-3 모델 내보내기와 불러오기기</title>
-    <link href="https://1360837.github.io/posts/3Dgraphics-ch01-3/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-3 모델 내보내기와 불러오기기" />
+    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch02 정점 처리</title>
+    <link href="https://1360837.github.io/posts/3Dgraphics-ch02/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch02 정점 처리" />
+    <published>2025-05-28T22:00:00+09:00</published>
+  
+    <updated>2025-05-28T22:00:00+09:00</updated>
+  
+    <id>https://1360837.github.io/posts/3Dgraphics-ch02/</id>
+    <content type="text/html" src="https://1360837.github.io/posts/3Dgraphics-ch02/" />
+    <author>
+      <name>nji</name>
+    </author>
+
+  
+    
+  
+
+  <summary>정점 처리 과정과 Ch02 목차</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계</title>
+    <link href="https://1360837.github.io/posts/3Dgraphics-ch01-4/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계" />
+    <published>2025-05-25T15:00:00+09:00</published>
+  
+    <updated>2025-05-25T15:00:00+09:00</updated>
+  
+    <id>https://1360837.github.io/posts/3Dgraphics-ch01-4/</id>
+    <content type="text/html" src="https://1360837.github.io/posts/3Dgraphics-ch01-4/" />
+    <author>
+      <name>nji</name>
+    </author>
+
+  
+    
+  
+
+  <summary>좌표계와 포팅</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-3 모델 내보내기와 불러오기</title>
+    <link href="https://1360837.github.io/posts/3Dgraphics-ch01-3/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-3 모델 내보내기와 불러오기" />
     <published>2025-05-23T15:00:00+09:00</published>
   
     <updated>2025-05-23T15:00:00+09:00</updated>
@@ -85,50 +129,6 @@
   
 
   <summary>chripy 테마로 GitHub Pages 개설하기</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인</title>
-    <link href="https://1360837.github.io/posts/3Dgraphics-ch01-1/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인" />
-    <published>2025-04-26T21:00:00+09:00</published>
-  
-    <updated>2025-04-26T21:00:00+09:00</updated>
-  
-    <id>https://1360837.github.io/posts/3Dgraphics-ch01-1/</id>
-    <content type="text/html" src="https://1360837.github.io/posts/3Dgraphics-ch01-1/" />
-    <author>
-      <name>nji</name>
-    </author>
-
-  
-    
-  
-
-  <summary>그래픽스 관점의 파이프라인</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01 폴리곤 메쉬</title>
-    <link href="https://1360837.github.io/posts/3Dgraphics-ch01/" rel="alternate" type="text/html" title="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01 폴리곤 메쉬" />
-    <published>2025-04-24T21:00:00+09:00</published>
-  
-    <updated>2025-04-24T21:00:00+09:00</updated>
-  
-    <id>https://1360837.github.io/posts/3Dgraphics-ch01/</id>
-    <content type="text/html" src="https://1360837.github.io/posts/3Dgraphics-ch01/" />
-    <author>
-      <name>nji</name>
-    </author>
-
-  
-    
-  
-
-  <summary>게임 개발 과정과 Ch01 목차</summary>
 
   </entry>
 

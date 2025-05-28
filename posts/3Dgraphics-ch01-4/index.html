@@ -30,27 +30,27 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인" />
+<meta property="og:title" content="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계" />
 <meta name="author" content="nji" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="그래픽스 관점의 파이프라인" />
-<meta property="og:description" content="그래픽스 관점의 파이프라인" />
-<link rel="canonical" href="https://1360837.github.io/posts/3Dgraphics-ch01-1/" />
-<meta property="og:url" content="https://1360837.github.io/posts/3Dgraphics-ch01-1/" />
+<meta name="description" content="좌표계와 포팅" />
+<meta property="og:description" content="좌표계와 포팅" />
+<link rel="canonical" href="https://1360837.github.io/posts/3Dgraphics-ch01-4/" />
+<meta property="og:url" content="https://1360837.github.io/posts/3Dgraphics-ch01-4/" />
 <meta property="og:site_name" content="#define Jiwoo" />
 <meta property="og:image" content="https://1360837.github.io/assets/3D_Graphics.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-26T21:00:00+09:00" />
+<meta property="article:published_time" content="2025-05-25T15:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://1360837.github.io/assets/3D_Graphics.png" />
-<meta property="twitter:title" content="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인" />
+<meta property="twitter:title" content="[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계" />
 <meta name="google-site-verification" content="XwwLJQM9_yKtymKUvMdtX_APKjOy7W00qRXfXHQCoM0" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nji"},"dateModified":"2025-04-26T21:00:00+09:00","datePublished":"2025-04-26T21:00:00+09:00","description":"그래픽스 관점의 파이프라인","headline":"[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인","image":"https://1360837.github.io/assets/3D_Graphics.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://1360837.github.io/posts/3Dgraphics-ch01-1/"},"url":"https://1360837.github.io/posts/3Dgraphics-ch01-1/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nji"},"dateModified":"2025-05-25T15:00:00+09:00","datePublished":"2025-05-25T15:00:00+09:00","description":"좌표계와 포팅","headline":"[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계","image":"https://1360837.github.io/assets/3D_Graphics.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://1360837.github.io/posts/3Dgraphics-ch01-4/"},"url":"https://1360837.github.io/posts/3Dgraphics-ch01-4/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인 | #define Jiwoo
+  <title>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계 | #define Jiwoo
   </title>
 
   <!--
@@ -235,6 +235,11 @@
 
 <script defer src="/assets/js/dist/post.min.js"></script>
 
+
+  <!-- MathJax -->
+  <script async src="/assets/js/data/mathjax.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
 
 
 <!-- Pageviews -->
@@ -443,7 +448,7 @@
         
           
             
-              <span>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인</span>
+              <span>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계</span>
             
 
           
@@ -938,71 +943,6 @@
   
 
   
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
 
   
   
@@ -1056,9 +996,9 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인</h1>
+    <h1 data-toc-skip>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계</h1>
     
-      <p class="post-desc fw-light mb-4">그래픽스 관점의 파이프라인</p>
+      <p class="post-desc fw-light mb-4">좌표계와 포팅</p>
     
 
     <div class="post-meta text-muted">
@@ -1075,13 +1015,13 @@
 
 <time
   
-  data-ts="1745668800"
+  data-ts="1748152800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 26, 2025
+  May 25, 2025
 </time>
 
       </span>
@@ -1142,9 +1082,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1073 words"
+  title="806 words"
 >
-  <em>5 min</em> read</span>
+  <em>4 min</em> read</span>
 
         </div>
       </div>
@@ -1153,7 +1093,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인</span>
+      <span class="label text-truncate">[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -1166,7 +1106,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-1 게임 제작 파이프라인</div>
+        <div class="label text-truncate py-2 ms-4">[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -1187,117 +1127,65 @@
 <p><a href="https://1360837.github.io/posts/3Dgraphics-ch01/"><strong>Ch01 폴리곤 메쉬</strong></a></p>
 
 <ul>
-  <li><strong>1.1 게임 제작 파이프 라인</strong></li>
+  <li>1.1 <a href="https://1360837.github.io/posts/3Dgraphics-ch01-1/">게임 제작 파이프 라인</a></li>
   <li>1.2 <a href="https://1360837.github.io/posts/3Dgraphics-ch01-2/">폴리곤 메쉬</a></li>
   <li>1.3 <a href="https://1360837.github.io/posts/3Dgraphics-ch01-3">모델 내보내기와 불러오기</a></li>
-  <li>1.4 <a href="https://1360837.github.io/posts/3Dgraphics-ch01-4/">좌표계</a></li>
+  <li><strong>1.4 좌표계</strong></li>
 </ul>
 
 <hr />
 
-<h1 id="11-게임-제작-파이프라인">1.1 게임 제작 파이프라인</h1>
+<h1 id="14-좌표계">1.4 좌표계</h1>
 
-<p><strong>그래픽스 관점의 파이프라인</strong></p>
+<p><a href="/assets/img/graphics_ch01-4/rhs_lhs.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-4/rhs_lhs.png" alt="rhs_lhs" loading="lazy"></a><em>(좌) 오른손 좌표계, (우) 왼손 좌표계</em></p>
 
-<blockquote>
-  <p>모델링 → 리깅 → 애니메이션 → 렌더링 → 후처리</p>
-</blockquote>
+<p><strong>오른손 좌표계</strong>와 <strong>왼손 좌표계</strong></p>
 
-<p>그래픽 아티스트: 모델링과 리깅 및 애니메이션의 전반부</p>
-
-<p>프로그래머: 애니메이션 후반부와 렌더링 및 후처리 작업</p>
+<p>오른손·왼손 네 손가락이 \(x\)축에서 \(y\)축 방향으로 감싸며 움직일 때 엄지손가락이 \(z\)축 방향을 가리키게 된다.</p>
 
 <blockquote>
-  <p>애니메이션 단계 = off-line 작업(그래픽 아티스트) + run-time 작업(프로그램)</p>
+  <p><em>1.2.3절에서 암묵적으로 오른손 좌표계를 가정하였고, 삼각형 노멀을 정의하기 위해 오른손을 사용했다. 하지만 왼손 좌표계에서는 왼손을 사용해 삼각형 노멀을 정의한다.</em></p>
+
+  <p>오른손 좌표계에서는 삼각형 정점은 반시계 방향으로 정렬되지만, 왼손 좌표계에서는 시계 방향으로 정렬되어야 한다.</p>
 </blockquote>
 
-<h2 id="모델링-단계"><span class="me-2">모델링 단계</span><a href="#모델링-단계" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>게임 환경 구성에 필요한 여러 가지 객체 만드는 단계</p>
-
-<p><em>ex. 슈팅게임에서는 군인, 총, 지형맵(terrain map) 등</em></p>
-
-<p>이러한 각 개체들은 <strong>폴리곤</strong>(polygon, 다각형)으로 구성되고, 이러한 물체를 <strong>폴리곤 메쉬</strong>(polygon mash)라 부른다.</p>
-
-<blockquote>
-  <p>게임에서 가장 많이 쓰이는 모델링 기법이다.</p>
-</blockquote>
-
-<p><a href="/assets/img/graphics_ch01-1/polygon_mesh.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-1/polygon_mesh.png" alt="polygon" loading="lazy"></a></p>
+<p><a href="/assets/img/graphics_ch01-4/vertex_hs.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-4/vertex_hs.png" alt="vertex_hs" loading="lazy"></a><em>오른손 좌표계와 왼손 좌표계에서의 정점 정렬</em></p>
 
 <hr />
 
-<p>시각적 사실성을 높여주는 <strong>텍스처</strong>(texture)의 제작 또한 매우 중요한 모델링 작업이다.</p>
+<p>하나의 폴리곤 메쉬를 오른손 좌표계와 왼손 좌표계 사이에서 포팅할 때는 일종의 <strong>리모델링</strong>(remodeling) 작업이 필요하다.</p>
 
-<blockquote>
-  <p>모델링 대상은 3차원 물체로 국한 되지 않는다.</p>
-</blockquote>
+<p><a href="/assets/img/graphics_ch01-4/remodeling_a.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-4/remodeling_a.png" alt="remodeling_a" loading="lazy"></a></p>
 
-<p><a href="/assets/img/graphics_ch01-1/texture.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-1/texture.png" alt="texture" loading="lazy"></a>
-<em>texture image 와 polygon mesh에 textrue 입힌 모습</em></p>
+<p>삼각형과 사각형으로 구성된 간단한 물체가 오른손 좌표계에서 -z축 방향에 정의되어 있다.</p>
 
-<p>많이 사용하는 텍스처는 물체 표면 색상을 결정하는 비트맵 이미지(bitmap image)이다.</p>
+<p>이러한 물체를 렌더링하기 위해서는 우리 눈에 해당하는 가상 카메라의 위치 및 시선(view direction)등과 같은 파라미터를 정해야 한다.(2장 내용)</p>
 
-<h2 id="리깅-단계"><span class="me-2">리깅 단계</span><a href="#리깅-단계" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>카메라의 위치가 원점이고, 시선은 (0,0,-1) 방향이라고 가정하면, 우측 상자에 보이는 영상을 만들어낸다.</p>
 
-<p>애니메이션을 위해서는 <strong>골격</strong>(skeleton)을 구성한 후, 각각의 뼈의 움직임이 폴리곤 메쉬를 어떻게 변형하는지 정의해야 한다.</p>
+<p>이제 위 이미지 (a)의 물체를 왼손 좌표계 기반의 패키지로 그대로 포팅되었다고 가정하자.</p>
 
-<p><em>ex. 군인 모델이 걷고 뛰기 위해서 허벅지 뼈가 움직일 때 허벅지를 구성하는 폴리곤이 따라서 움직이도록 설정</em></p>
+<p><a href="/assets/img/graphics_ch01-4/remodeling_b.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-4/remodeling_b.png" alt="remodeling_b" loading="lazy"></a></p>
 
-<p>이러한 과정을 <strong>리깅</strong>(rigging)이라고 부른른다.</p>
+<p>이 물체는 위 이미지 (b)와 같이 왼손 좌표계의 -z축 방향에 놓이게 된다.</p>
 
-<p><a href="/assets/img/graphics_ch01-1/skeleton.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-1/skeleton.png" alt="skeleton" loading="lazy"></a>
-<em>폴리곤 메쉬에 삽입된 골격</em></p>
+<p>(a)의 이미지의 오른손 좌표계와 같이 카메라의 위치와 시선을 그대로 사용되었다고 가정하자.</p>
 
-<p><a href="/assets/img/graphics_ch01-1/animation.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-1/animation.png" style="background-color: white; padding: 8px;" loading="lazy"></a><em>삽입된 골격을 움직여 에니메이션 생성</em></p>
+<p>그 결과 우측 상자에 보이는 영상을 얻을 수 있다.</p>
 
-<h2 id="애니메이션-단계"><span class="me-2">애니메이션 단계</span><a href="#애니메이션-단계" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>(a) 이미지의 영상과 비교해 보면 좌우가 뒤바뀌어졌음을 알 수 있다.</p>
 
-<p>컴퓨터 게임 및 애니메이션에서는 조금씩 변화하는 연속적인 영상을 스크린 상에 빠르게 보여줌으로 움직임을 묘사한다.</p>
+<p>이러한 불일치를 해결하는 방법은 간단하다. 내보내기 시 물체와 카메라 파라미터의 -z 좌표의 부호를 바꾸면 된다.</p>
 
-<p>여기서 각각의 영상을 <strong>프레임</strong>(frame)이라고 부른다.</p>
+<p>이는 xy평면에 대한 <strong>반사</strong>(reflection)에 해당한다.</p>
 
-<blockquote>
-  <p>초당 60개의 프레임을 생성한다면 60fps(frames per second)</p>
-</blockquote>
+<p>이 과정이 바로 두 번째 리모델링 작업이다.</p>
 
-<hr />
+<p><a href="/assets/img/graphics_ch01-4/remodeling_c.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-4/remodeling_c.png" alt="remodeling_c" loading="lazy"></a></p>
 
-<p>물체의 애니메이션을 런타임에 재생할 때, 매 프레임마다 해당 물체의 위치와 방향을 계산해야 한다.</p>
+<p>(c) 이미지는 이렇게 반사 된 물체와 카메라 파라미터를 보여준다.</p>
 
-<p>역학(dynamics)을 처리하여 매 프레임마다 관련 물체들의 위치와 방향을 갱신한다.</p>
-
-<p>조명 상태와 시점(viewpoint) 또한 매 프레임마다 바뀔 수 있다.</p>
-
-<h2 id="렌더링-단계"><span class="me-2">렌더링 단계</span><a href="#렌더링-단계" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>각 프레임을 구성하는 모든 요소가 결정되면 <strong>렌더링</strong>(rendering) 모듈이 실행된다.</p>
-
-<blockquote>
-  <p>렌더링: 3차원 장면에서 2차원 영상(프레임)을 생성해 내는 과정</p>
-</blockquote>
-
-<p><a href="/assets/img/graphics_ch01-1/rendering.png" class="popup img-link  shimmer"><img src="/assets/img/graphics_ch01-1/rendering.png" alt="rendering" loading="lazy"></a><em>위의 그림을 렌더링한 결과</em></p>
-
-<h2 id="후처리-단계"><span class="me-2">후처리 단계</span><a href="#후처리-단계" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>컴퓨터 게임의 최종 화면은 <strong>후처리</strong>(postprocessing)된 영상을 보여준다.</p>
-
-<p>시각적 사실성을 높이기 위한 작업은 모두 후처리 단계에서 이루어 진다.</p>
-
-<p><em>ex. 모션 블러(motion blur), 초점 심도(depth of field)</em></p>
-
-<p>런타임 애니메이션과 렌더링 및 후처리 단계는 게임 프로그램에 의해 실행된다.</p>
-
-<p>게임 프로그램은 그래픽스 API(Application Programming Interface)를 기반으로 작성된다.</p>
-
-<blockquote>
-  <p>API는 그래픽스 응용에 필수적인 함수들을 제공한다.</p>
-
-  <p>이러한 함수는 대부분 GPU 내에서 하드웨어로 구현 되어 있다.</p>
-
-  <p>그래픽스 API는 그래픽스 응용 프로그래밍에서 호출하는 함수를 GPU에서 실행 가능한 명령들로 바꿔주는 역할을 한다.</p>
-</blockquote>
+<p>그러면 (a) 이미지와 동일한 영상을 생성한다.</p>
 
   </div>
 
@@ -1316,9 +1204,14 @@
           >graphics</a>
         
           <a
-            href="/tags/pipeline/"
+            href="/tags/vector/"
             class="post-tag no-text-decoration"
-          >pipeline</a>
+          >vector</a>
+        
+          <a
+            href="/tags/coordinate/"
+            class="post-tag no-text-decoration"
+          >coordinate</a>
         
       </div>
     
@@ -1354,21 +1247,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=[%EA%B2%8C%EC%9E%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84%20%EC%9C%84%ED%95%9C%203%EC%B0%A8%EC%9B%90%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4]%20Ch01-1%20%EA%B2%8C%EC%9E%84%20%EC%A0%9C%EC%9E%91%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20-%20#define%20Jiwoo&url=https%3A%2F%2F1360837.github.io%2Fposts%2F3Dgraphics-ch01-1%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=[%EA%B2%8C%EC%9E%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84%20%EC%9C%84%ED%95%9C%203%EC%B0%A8%EC%9B%90%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4]%20Ch01-4%20%EC%A2%8C%ED%91%9C%EA%B3%84%20-%20#define%20Jiwoo&url=https%3A%2F%2F1360837.github.io%2Fposts%2F3Dgraphics-ch01-4%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=[%EA%B2%8C%EC%9E%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84%20%EC%9C%84%ED%95%9C%203%EC%B0%A8%EC%9B%90%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4]%20Ch01-1%20%EA%B2%8C%EC%9E%84%20%EC%A0%9C%EC%9E%91%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20-%20#define%20Jiwoo&u=https%3A%2F%2F1360837.github.io%2Fposts%2F3Dgraphics-ch01-1%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=[%EA%B2%8C%EC%9E%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84%20%EC%9C%84%ED%95%9C%203%EC%B0%A8%EC%9B%90%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4]%20Ch01-4%20%EC%A2%8C%ED%91%9C%EA%B3%84%20-%20#define%20Jiwoo&u=https%3A%2F%2F1360837.github.io%2Fposts%2F3Dgraphics-ch01-4%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2F1360837.github.io%2Fposts%2F3Dgraphics-ch01-1%2F&text=[%EA%B2%8C%EC%9E%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84%20%EC%9C%84%ED%95%9C%203%EC%B0%A8%EC%9B%90%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4]%20Ch01-1%20%EA%B2%8C%EC%9E%84%20%EC%A0%9C%EC%9E%91%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20-%20#define%20Jiwoo" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2F1360837.github.io%2Fposts%2F3Dgraphics-ch01-4%2F&text=[%EA%B2%8C%EC%9E%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84%20%EC%9C%84%ED%95%9C%203%EC%B0%A8%EC%9B%90%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4]%20Ch01-4%20%EC%A2%8C%ED%91%9C%EA%B3%84%20-%20#define%20Jiwoo" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1933,43 +1826,43 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -1995,34 +1888,6 @@
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        <article class="col">
-          <a href="/posts/3Dgraphics-ch02/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1748437200"
-  data-df="ll"
-  
->
-  May 28, 2025
-</time>
-
-              <h4 class="pt-0 my-2">[게임 프로그래밍을 위한 3차원 그래픽스] Ch02 정점 처리</h4>
-              <div class="text-muted">
-                <p>정점 처리 과정과 Ch02 목차</p>
-              </div>
-            </div>
-          </a>
-        </article>
       
         <article class="col">
           <a href="/posts/3Dgraphics-ch01/" class="post-preview card h-100">
@@ -2053,7 +1918,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/3Dgraphics-ch01-4/" class="post-preview card h-100">
+          <a href="/posts/3Dgraphics-ch01-2/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2065,16 +1930,44 @@
 
 <time
   
-  data-ts="1748152800"
+  data-ts="1747375200"
   data-df="ll"
   
 >
-  May 25, 2025
+  May 16, 2025
 </time>
 
-              <h4 class="pt-0 my-2">[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-4 좌표계</h4>
+              <h4 class="pt-0 my-2">[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-2 폴리곤 메쉬</h4>
               <div class="text-muted">
-                <p>좌표계와 포팅</p>
+                <p>폴리곤 메쉬를 이용한 모델링</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/3Dgraphics-ch02/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1748437200"
+  data-df="ll"
+  
+>
+  May 28, 2025
+</time>
+
+              <h4 class="pt-0 my-2">[게임 프로그래밍을 위한 3차원 그래픽스] Ch02 정점 처리</h4>
+              <div class="text-muted">
+                <p>정점 처리 과정과 Ch02 목차</p>
               </div>
             </div>
           </a>
@@ -2095,21 +1988,21 @@
 
   
     <a
-      href="/posts/3Dgraphics-ch01/"
+      href="/posts/3Dgraphics-ch01-3/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01 폴리곤 메쉬</p>
+      <p>[게임 프로그래밍을 위한 3차원 그래픽스] Ch01-3 모델 내보내기와 불러오기</p>
     </a>
   
 
   
     <a
-      href="/posts/github-pages/"
+      href="/posts/3Dgraphics-ch02/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>GitHub Pages 개설하기</p>
+      <p>[게임 프로그래밍을 위한 3차원 그래픽스] Ch02 정점 처리</p>
     </a>
   
 </nav>
